@@ -36,6 +36,13 @@
           }
         }
       },
+      "resources": {
+        "css": [
+        {
+          "uri": "css/style.css"
+        }
+        ]
+      },
       "rootView": {
           "viewName": "ui5.walkthrough.view.App",
           "type": "XML",
