@@ -1,10 +1,12 @@
 sap.ui.define([
-    "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast",
-    
-], function (Controller, MessageToast){
-    "use strict"
-    return Controller.extend("ui5.walkthrough.controller.App",{
-    
+    "sap/ui/core/mvc/Controller"
+ ], (Controller) => {
+    "use strict";
+ 
+    return Controller.extend("ui5.walkthrough.App", {
+
+      onOpenDialog: function () {
+         this.getOwnerComponent().openHelloDialog();
+      }
     });
-})
+ });

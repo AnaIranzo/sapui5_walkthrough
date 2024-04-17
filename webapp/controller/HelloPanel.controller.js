@@ -1,7 +1,8 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller",
-    "sap/m/MessageToast"
- ], (Controller, MessageToast) => {
+    "sap/m/MessageToast",
+    "sap/ui/core/Fragment"
+ ], (Controller, MessageToast, Fragment) => {
     "use strict";
  
     return Controller.extend("ui5.walkthrough.controller.HelloPanel", {
@@ -13,6 +14,10 @@ sap.ui.define([
  
           // show message
           MessageToast.show(sMsg);
-       }
+       },
+       onOpenDialog(){
+        this.getOwnerComponent().openHelloDialog();
+       },
+     
     });
  });
